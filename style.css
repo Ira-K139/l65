@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(150, 231, 191);
+  }
+  
+  .site-header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 25px;
+  }
+  
+  .site-main {
+    padding: 25px;
+  }
+  
+  .site-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .card-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px; 
+    justify-content: center;
+    margin: 0 auto;
+  }
+  
+  .card {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(194, 252, 198, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-image-container {
+    width: 100%;
+    height: 200px;
+    position: relative;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+  }
+  
+  .loading-spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    border: 4px solidrgb(225, 241, 238);
+    border-top: 4px solidrgb(52, 219, 155);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Анимация для спиннера */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .card-footer {
+    padding: 15px;
+    background-color:rgb(164, 222, 236);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .card-text {
+    font-size: 15px;
+    color: #333;
+  }
+  
+  .heart-icon {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
